@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>frecuencia</title>
+<style>
+
+body{background-color:gray;}
+
+#au{display: none;}
+
+</style>
+<link  rel="icon" href="https://lh3.googleusercontent.com/proxy/N9V2L5TyOd7hSSXLsL4v78XB8g6qf-qn71MWoZT5_jH1marpskzweUAp4T29kusvkTCG7KJLkNZ7hTIqWkVj_A6zoJ_0yo6E7C1YBShrdQ76pnmBm30" type="image/png" />
+
+</head>
+<body align="center" onload="setInterval(raka, 500);setInterval(bordis, 800);">
+
+<audio src="playsong.ogg" preload="auto" controls autoplay loop id="au"></audio>
+
+<h1 id="w">WELCOME</h1>
+    
+<canvas width="800" height="600" id="can" style="border: 2px solid black;"></canvas>
+
+<script>
+
+
+
+var ctx = document.getElementById('can').getContext('2d');
+
+var D = 0;
+var A = 0;
+var I = 0;
+var dir = {
+    u:0,
+    d:1,
+    l:2,
+    r:3
+};
+
+var rayo = {PX:0,PY:0}
+
+function nave(){
+
+    ctx.fillStyle = 'rgba(0, 0, 200, 10)';
+        ctx.fillRect(D, A, 50, 50);    
+    }
+
+
+
+    function bordis(){
+        var bor = A;
+            while(bor > -10){
+            ctx.clearRect (D+20 ,bor-10 , 10 , 10 );
+                    bor--;}
+
+                    
+    }
+
+    function raka(){
+                        var pt = A;
+            while(pt > -10){
+            ctx.fillStyle = 'rgba(250, 0, 0, 0.5)';
+            ctx.fillRect(D+20, pt, 10, 10);
+                    pt--;}
+
+                    
+                }
+
+document.addEventListener('keypress', function(event){
+var tpc = event.which;
+var tp = String.fromCharCode(tpc);
+
+ctx.clearRect (0 ,0 , 800 , 600 );
+
+
+if(tp=="K"){if(D>0){D-=10;}}
+
+    if(tp=="P"){if(D<750){D+=10;}}
+
+        if(tp=="O"){if(A>0){A-=10;}}
+
+            if(tp=="L"){if(A<550){A+=10}}
+
+                //  if(tp=="H"){
+                   
+                   
+
+                // var notepase = 0;
+                // notepase++;
+                // if(notepase===1){
+                // setInterval(raka, 500);    
+                // setInterval(bordis, 800);
+                // }
+
+                // }
+
+                    
+        
+                
+                    
+                document.getElementById('au').play();                
+nave();
+          
+});
+
+
+   
+   
+
+</script>
+
+</body>
+
+</html>
