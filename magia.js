@@ -6,7 +6,7 @@ function init(){
    var alien = new Image();
    var marcianito = new Image();
 
-   Tnave.src = 'nave.png';
+   Tnave.src = 'nave1.png';
    alien.src = 'alien.png';
    marcianito.src = 'marcianito-real-no-fake.gif';
         
@@ -26,7 +26,12 @@ var ene = [
     new ealien({id:"kk2", x:200, y: 50, w:50, h:50}), 
     new ealien({id:"kk3", x:600, y: 50, w:50, h:50}),
     new ealien({id:"kk3", x:400, y: -150, w:80, h:90}),
-    //new ealien({id:"marcianito", x:400, y: -100, w:80, h:90, image: marcianito})
+    new ealien({id:"kk3", x:400, y: -150, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -150, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -150, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -150, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -150, w:80, h:90})
+    // new ealien({id:"marcianito", x:400, y: -100, w:80, h:90, image: marcianito})
 ];
 
 var drawene = function(enel){
@@ -42,6 +47,7 @@ this.y = 400,
 this.w = 50,
 this.h = 70,
 this.dir,
+this.tbala = 'a',
 this.balas = [];
 
 this.dibuja = function(){
@@ -55,7 +61,10 @@ this.dibuja = function(){
         for(var c = 0;c<this.balas.length;c++){
 
         var ba = this.balas[c];
-        ctx.fillRect(ba.x, ba.y -= 5, ba.w, ba.h);
+        if(this.tbala === 'a'){ctx.fillRect(ba.x, ba.y -= 5, ba.w, ba.h)}
+        if(this.tbala === 'b'){ctx.fillRect(ba.x, ba.y -= 5, ba.w, ba.h+100)}
+        if(this.tbala === 'c'){ctx.fillRect(ba.x, ba.y -= 5, ba.w+100, ba.h)}
+        
         this.killalien(this.balas[c],c);  
         if(ba.y < 0){this.balas.splice(c, 1)}
           
@@ -95,7 +104,7 @@ function draw(){
     drawene(ene);
 }
 
-var drawi = setInterval(draw, 6);
+var drawi = setInterval(draw, 1000/30);
 
 document.addEventListener('keydown', function(event){
 
@@ -119,9 +128,19 @@ if(event.keyCode === 80){
     location.reload();
 }
 
-if(event.keyCode === 32){
-    nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10});
+if(event.keyCode === 68){
+    nave.tbala = 'b';
+    nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10})
 }
+
+if(event.keyCode === 70){
+    nave.tbala = 'c';
+    nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10})
+}
+
+if(event.keyCode === 32){
+    if(nave.balas.length < 10){ nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10});
+}}
 
 });
 
