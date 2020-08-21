@@ -23,6 +23,8 @@ return {
 
 var ene = [ 
     new ealien({id:"kk1", x:400, y: 50, w:50, h:50}), 
+    new ealien({id:"kk1", x:400, y: 50, w:50, h:50}), 
+    new ealien({id:"kk2", x:200, y: 50, w:50, h:50}), 
     new ealien({id:"kk2", x:200, y: 50, w:50, h:50}), 
     new ealien({id:"kk3", x:600, y: 50, w:50, h:50}),
     new ealien({id:"kk3", x:400, y: -150, w:80, h:90}),
@@ -30,14 +32,114 @@ var ene = [
     new ealien({id:"kk3", x:400, y: -150, w:80, h:90}),
     new ealien({id:"kk3", x:400, y: -150, w:80, h:90}),
     new ealien({id:"kk3", x:400, y: -150, w:80, h:90}),
-    new ealien({id:"kk3", x:400, y: -150, w:80, h:90})
+    new ealien({id:"kk3", x:400, y: -150, w:80, h:90}),
+
+    new ealien({id:"kk3", x:300, y: -250, w:80, h:90}),
+    new ealien({id:"kk3", x:300, y: -250, w:80, h:90}),
+    new ealien({id:"kk3", x:300, y: -250, w:80, h:90}),
+    new ealien({id:"kk3", x:700, y: -450, w:80, h:90}),
+    new ealien({id:"kk3", x:700, y: -450, w:80, h:90}),
+    new ealien({id:"kk3", x:700, y: -450, w:80, h:90}),
+    new ealien({id:"kk3", x:100, y: -550, w:80, h:90}),
+    new ealien({id:"kk3", x:200, y: -550, w:80, h:90}),
+    new ealien({id:"kk3", x:300, y: -450, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -250, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -50, w:80, h:90}),
+    new ealien({id:"kk3", x:500, y: -350, w:80, h:90}),
+    new ealien({id:"kk3", x:600, y: -350, w:80, h:90}),
+    new ealien({id:"kk3", x:700, y: -150, w:80, h:90}),
+    new ealien({id:"kk3", x:800, y: -150, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -150, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -150, w:80, h:90}),
+
+    new ealien({id:"kk3", x:400, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:400, y: -500, w:80, h:90}),
+
+    new ealien({id:"kk3", x:200, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:200, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:200, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:200, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:200, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:200, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:200, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:200, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:200, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:200, y: -500, w:80, h:90}),
+
+    new ealien({id:"kk3", x:600, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:600, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:600, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:600, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:600, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:600, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:600, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:600, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:600, y: -500, w:80, h:90}),
+    new ealien({id:"kk3", x:600, y: -500, w:80, h:90}),
+
+
+
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+    new ealien({id:"kk3", x:400, y: -750, w:200, h:250}),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // new ealien({id:"marcianito", x:400, y: -100, w:80, h:90, image: marcianito})
 ];
 
 var drawene = function(enel){
 for(var c=0;c<enel.length;c++){
 var ala = enel[c];
-ctx.drawImage(ala.image, ala.x, ala.y +=.1, ala.w, ala.h)
+ctx.drawImage(ala.image, ala.x, ala.y +=.4, ala.w, ala.h)
     }
 }
 
@@ -128,15 +230,15 @@ if(event.keyCode === 80){
     location.reload();
 }
 
-if(event.keyCode === 68){
-    nave.tbala = 'b';
-    nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10})
-}
+// if(event.keyCode === 68){
+//     nave.tbala = 'b';
+//     nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10})
+// }
 
-if(event.keyCode === 70){
-    nave.tbala = 'c';
-    nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10})
-}
+// if(event.keyCode === 70){
+//     nave.tbala = 'c';
+//     nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10})
+// }
 
 if(event.keyCode === 32){
     if(nave.balas.length < 10){ nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10});
@@ -170,6 +272,8 @@ document.addEventListener('keyup', function(event){
         var bl = document.getElementById('bl');
         var br = document.getElementById('br');
         var bs = document.getElementById('bs');
+        function ns(){nave.dir = '';}
+        
 
         bu.addEventListener('mousedown', function(event){
             nave.dir = 'ariba';
@@ -186,14 +290,11 @@ document.addEventListener('keyup', function(event){
         
         bs.addEventListener('mousedown', function(event){
                 
-                if(nave.balas.length < 10){ nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10}); }
+                if(nave.balas.length < 3){ nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10}); }
             });
     
 
 
-        document.addEventListener('click', function(event){
-            nave.dir = '';
-        });
         
 
 
