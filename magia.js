@@ -165,7 +165,36 @@ document.addEventListener('keyup', function(event){
     });
 
 
+        var bu = document.getElementById('bu');
+        var bd = document.getElementById('bd');
+        var bl = document.getElementById('bl');
+        var br = document.getElementById('br');
+        var bs = document.getElementById('bs');
 
+        bu.addEventListener('mousedown', function(event){
+            nave.dir = 'ariba';
+        });
+        bd.addEventListener('mousedown', function(event){
+            nave.dir = 'abajo';
+        });
+        bl.addEventListener('mousedown', function(event){
+            nave.dir = 'left';
+        });
+        br.addEventListener('mousedown', function(event){
+            nave.dir = 'right';
+        });
+        
+        bs.addEventListener('mousedown', function(event){
+                
+                if(nave.balas.length < 10){ nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10}); }
+            });
+    
+
+
+        document.addEventListener('mouseup', function(event){
+            nave.dir = '';
+        });
+        
 
 
 
