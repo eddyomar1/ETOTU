@@ -191,7 +191,7 @@ document.addEventListener('keyup', function(event){
     
 
 
-        document.addEventListener('mouseup', function(event){
+        document.addEventListener('click', function(event){
             nave.dir = '';
         });
         
