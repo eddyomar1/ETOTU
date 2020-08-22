@@ -36,40 +36,40 @@ var ene = [
     new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -150, w:80, h:100, d:5}),
     new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -150, w:80, h:100, d:5}),
 
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
     new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 2000), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 650), w:80, h:100, d:10}),
-    
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+    new ealien({id:"kk3", x: Math.floor(Math.random() * 650), y: -Math.floor(Math.random() * 1650), w:80, h:100, d:10}),
+   
 
 
     
@@ -309,7 +309,7 @@ document.addEventListener('keyup', function(event){
         
         bs.addEventListener('mousedown', function(event){
                 
-                if(nave.balas.length < 3){ nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10}); }
+                if(nave.balas.length < 5){ nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10}); }
             });
     
 
