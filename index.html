@@ -19,8 +19,8 @@ button{font-size: 30px; padding: 20px 20px 20px 20px; margin: 20px 20px 20px 20p
     function tipo(){
         var ancho = screen.width;
 
-    if(ancho <= 1000){document.getElementById('botones').style.display = 'block';}
-    else{document.getElementById('botones').style.display = 'none';}
+    if(ancho <= 1000){document.getElementById('botones').style.display = 'block'; alert('El minijuego a sido optimizado para movil');}
+    else{document.getElementById('botones').style.display = 'none'; alert('El minijuego a sido optimizado para PC');}
     
     }
 
@@ -34,11 +34,11 @@ button{font-size: 30px; padding: 20px 20px 20px 20px; margin: 20px 20px 20px 20p
 <body align="center" onload="tipo()">
 
 <audio src="playsong.ogg" preload="auto" controls autoplay loop id="au"></audio>
-
+<!--button id="play">play</button-->
 <h1 id="w"></h1>
-    
-<canvas width="700" height="500" id="can" style="border: 2px solid black;"></canvas>
-<br><br><br>
+
+<canvas width="700" height="600" id="can" style="border: 2px solid black;">El minijuego no puede correr en este navegador. porfavor utiize chrome</canvas>
+
 <div id="botones">
     
 <button id="bu">up</button><br>
@@ -48,7 +48,7 @@ button{font-size: 30px; padding: 20px 20px 20px 20px; margin: 20px 20px 20px 20p
 <button id="bd">down</button>
 </div>
 
-<button id="play">play</button>
+
 <!--button id="pausa">pausa</button-->
 
 <script type="text/javascript" src="magia.js"></script>
