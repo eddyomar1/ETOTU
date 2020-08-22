@@ -9,27 +9,38 @@ body{background-color:gray;}
 
 #au{display: none;}
 
-button{font-size: 30px;}
+button{font-size: 30px; padding: 20px 20px 20px 20px; margin: 20px 20px 20px 20px;}
 
+#tipo{font-size: 30px;}
 
 </style>
 <link  rel="icon" href="https://lh3.googleusercontent.com/proxy/N9V2L5TyOd7hSSXLsL4v78XB8g6qf-qn71MWoZT5_jH1marpskzweUAp4T29kusvkTCG7KJLkNZ7hTIqWkVj_A6zoJ_0yo6E7C1YBShrdQ76pnmBm30" type="image/png" />
+<script>
+    function tipo(){
+        var ancho = screen.width;
 
+    if(ancho <= 1000){document.getElementById('botones').style.display = 'inline';}
+    else{document.getElementById('botones').style.display = 'none';}
+    
+    }
+    </script>
+    
 </head>
-<body align="center">
+<body align="center" onload="tipo()">
 
 <audio src="playsong.ogg" preload="auto" controls autoplay loop id="au"></audio>
 
-<h1 id="w">WELCOME to the la navesita</h1>
+<h1 id="w"></h1>
     
-<canvas width="800" height="500" id="can" style="border: 2px solid black;"></canvas>
+<canvas width="700" height="500" id="can" style="border: 2px solid black;"></canvas>
 <div id="botones">
 <button id="bu" style="user-select: none;">up</button><br>
 <button id="bl" style="user-select: none;">left</button>
+<button id="bs" style="user-select: none;">Shooting</button>
 <button id="br" style="user-select: none;">right</button><br>
 <button id="bd" style="user-select: none;">down</button>
-<button id="bs" style="user-select: none;">Shooting</button>
 </div>
+
 <script type="text/javascript" src="magia.js"></script>
 
 </body>
