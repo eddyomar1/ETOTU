@@ -518,7 +518,7 @@ if(ba.x+ba.w >= e.x &&
     ene.splice(c, 1);
     // e.splice(c, m)
     sc++;
-    if(sc==10){clearInterval(drawi)}
+    // if(sc==10){clearInterval(drawi)}
     }
     e.d-=1;
 }
