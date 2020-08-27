@@ -1,14 +1,24 @@
-function init(){
+function init(vdn){
 
     var ctx = document.getElementById('can').getContext('2d');
     var sc = 0;
 
+    
+
+
+
    var Tnave = new Image();
+   var rayo = new Image();
+   
    var alien = new Image();
    var aliend = new Image();
    var marcianito = new Image();
 
-   Tnave.src = 'navep.png';
+
+
+   Tnave.src = vdn;
+   rayo.src = 'rayo.png';
+
    alien.src = 'alien.png';
    aliend.src = 'alienave.png';
    marcianito.src = 'marcianito-real-no-fake.gif';
@@ -490,12 +500,12 @@ this.dibuja = function(){
         for(var c = 0;c<this.balas.length;c++){
 
         var ba = this.balas[c];
-        if(this.tbala === 'a'){ctx.fillRect(ba.x, ba.y -= 5, ba.w, ba.h)}
-        if(this.tbala === 'b'){ctx.fillRect(ba.x, ba.y -= 5, ba.w, ba.h+100)}
-        if(this.tbala === 'c'){ctx.fillRect(ba.x, ba.y -= 5, ba.w+100, ba.h)}
+         if(this.tbala === 'a'){ctx.fillRect(ba.x, ba.y -= 5, ba.w, ba.h)}
+         if(this.tbala === 'b'){ctx.drawImage(rayo, ba.x, ba.y, ba.w, ba.h-=200)}
+         if(this.tbala === 'c'){ctx.fillRect(ba.x, ba.y -= 5, ba.w+100, ba.h)}
         
         this.killalien(this.balas[c],c);  
-        if(ba.y < 0){this.balas.splice(c, 1)}
+        if(ba.y < 0 || ba.h < -400){this.balas.splice(c, 1)}
           
     }
 
@@ -508,12 +518,16 @@ this.killalien = function(ba, m){
 for(var c = 0;c < ene.length;c++){
 var e = ene[c];
 
-if(ba.x+ba.w >= e.x && 
+if(nave.tbala == 'a' && ba.x+ba.w >= e.x && 
     ba.x <= e.x+e.w && 
     ba.y >= e.y && 
     ba.y <= e.y+e.h){ 
     
+
+        // if(tbala != 'b'){
     this.balas.splice(this.balas[m],1);  
+        // }
+
     if(e.d==0){  
     ene.splice(c, 1);
     // e.splice(c, m)
@@ -521,8 +535,27 @@ if(ba.x+ba.w >= e.x &&
     // if(sc==10){clearInterval(drawi)}
     }
     e.d-=1;
-}
+}//ataque de tipo a
  
+if(nave.tbala == 'b' &&  ba.h <= e.y && ba.x+ba.w >= e.x && ba.x <= e.x+e.w && ba.y >= e.y){
+ 
+        // if(tbala != 'b'){
+            // this.balas.splice(this.balas[m],1);  
+            // }
+    
+        if(e.d==0){  
+        ene.splice(c, 1);
+        // e.splice(c, m)
+        sc++;
+        // if(sc==10){clearInterval(drawi)}
+        }
+        e.d-=1;
+    
+
+}//ataque de tipo b
+ 
+
+
         }
 
 }
@@ -540,7 +573,7 @@ function draw(){
     document.getElementById('w').innerHTML = "score " + sc;
 }
 
-var drawi = setInterval(draw, 1000/30);
+var drawi = setInterval(draw, 1000/50);
 
 
 document.addEventListener('keydown', function(event){
@@ -565,10 +598,10 @@ if(event.keyCode === 80){
     location.reload();
 }
 
-// if(event.keyCode === 68){
-//     nave.tbala = 'b';
-//     nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10})
-// }
+if(event.keyCode === 68){
+    nave.tbala = 'b';
+    nave.balas.push({x: nave.x + 20, y:nave.y + 10, w:30, h:0})
+}
 
 // if(event.keyCode === 70){
 //     nave.tbala = 'c';
@@ -576,6 +609,7 @@ if(event.keyCode === 80){
 // }
 
 if(event.keyCode === 32){
+    nave.tbala = 'a';
     if(nave.balas.length < 10){ nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10});
 }}
 
@@ -649,10 +683,36 @@ document.addEventListener('keyup', function(event){
 
 }
 
-window.addEventListener('load', function(event){
-setTimeout(init,2000);
+var botonplay = document.getElementById('play');
+var nu = document.getElementById('nc');
+var nd = document.getElementById('np');
+var vdn = 'navec.png';
+
+nu.addEventListener('click', function(){
+
+  vdn = 'navec.png'
+
+  nu.style.filter = 'saturate(120%)'
+
+  nd.style.filter = 'saturate(10%)'
 
 });
 
+nd.addEventListener('click', function(){
 
+    vdn = 'navep.png'
+
+    nd.style.filter = 'saturate(120%)'
+
+    nu.style.filter = 'saturate(10%)'
+
+  });
+
+botonplay.addEventListener('click', function(){
+
+    document.getElementById('ventana_de_entrada').style.display = 'none';
+
+    setTimeout(function(){init(vdn)},2000);
+
+});
 

@@ -13,16 +13,33 @@ button{font-size: 30px; padding: 20px 20px 20px 20px; margin: 20px 20px 20px 20p
 
 #tipo{font-size: 30px;}
 
+#ventana_de_entrada{position: absolute; background-color: teal; width: 600px; height: 400px;}
+
+.ndp{width:150px; margin: 30px 30px 30px 30px;}
+
+#ne{width:50px;}
+
+
 </style>
 <link  rel="icon" href="https://lh3.googleusercontent.com/proxy/N9V2L5TyOd7hSSXLsL4v78XB8g6qf-qn71MWoZT5_jH1marpskzweUAp4T29kusvkTCG7KJLkNZ7hTIqWkVj_A6zoJ_0yo6E7C1YBShrdQ76pnmBm30" type="image/png" />
 <script>
-    function tipo(){
-        var ancho = screen.width;
+
+
+
+function tipo(){
+
+var ancho = screen.width;
+var alto = screen.height;
+
+    var vde = document.getElementById('ventana_de_entrada');
+    vde.style.top = (alto - 400)/2 + 'px';
+    vde.style.left = (ancho - 600)/2 + 'px';
 
     if(ancho <= 1000){document.getElementById('botones').style.display = 'block'; alert('El minijuego a sido optimizado para movil');}
     else{document.getElementById('botones').style.display = 'none'; alert('El minijuego a sido optimizado para PC');}
     
     }
+
 
 
 
@@ -48,6 +65,21 @@ button{font-size: 30px; padding: 20px 20px 20px 20px; margin: 20px 20px 20px 20p
 <button id="bd">down</button>
 </div>
 
+
+<div id="ventana_de_entrada">
+<h2 id="wt"></h2>
+
+<img id="nc" class="ndp" src="navec.png">
+<img id="np" class="ndp" src="navep.png" style="filter: saturate(10%);">
+<img id="ne" class="ndp" src="ne.png" style="filter: saturate(10%);" title="esta nave aun no disponible">
+
+
+
+<br>
+
+<button id="play">play</button>
+
+</div>
 
 <!--button id="pausa">pausa</button-->
 
