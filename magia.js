@@ -1303,7 +1303,7 @@ document.addEventListener('keyup', function(event){
         var bd = document.getElementById('bd');
         var bl = document.getElementById('bl');
         var br = document.getElementById('br');
-        var bs = document.getElementById('bs');
+
         // function ns(){nave.dir = '';}
         
 
@@ -1329,15 +1329,15 @@ setInterval(() => {
 }, 300);
     
 
-    window.onmousemove = function (){
-        var mox = window.event.clientX;
-        var moy = window.event.clientY;
+//     window.onmousemove = function (){
+//         var mox = window.event.clientX;
+//         var moy = window.event.clientY;
      
-        nave.x = mox;
-        nave.y = moy;
- console.log(mox+ " " + moy);
+//         nave.x = mox;
+//         nave.y = moy;
+//  console.log(mox+ " " + moy);
 
-}
+// }
 
 
 
