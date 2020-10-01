@@ -35,7 +35,7 @@ var alto = screen.height;
     vde.style.top = (alto - 400)/2 + 'px';
     vde.style.left = (ancho - 600)/2 + 'px';
 
-    if(ancho <= 1000){document.getElementById('botones').style.display = 'block'; alert('El minijuego a sido optimizado para movil');     vde.style.left = ancho/2 + 'px';}
+    if(ancho <= 1000){document.getElementById('botones').style.display = 'block'; alert('El minijuego aun no esta muy bien optimizado para moviles');     vde.style.left = ancho/2 + 'px';}
     else{document.getElementById('botones').style.display = 'none'; alert('El minijuego a sido optimizado para PC');}
     
     }
@@ -53,6 +53,7 @@ var alto = screen.height;
 <audio src="playsong.ogg" preload="auto" controls autoplay loop id="au"></audio>
 <!--button id="play">play</button-->
 <h1 id="w"></h1>
+<h1 id="msc"></h1>
 
 <canvas width="700" height="600" id="can" style="border: 2px solid black;" >El minijuego no puede correr en este navegador. porfavor utiize chrome</canvas>
 
@@ -82,6 +83,20 @@ var alto = screen.height;
 </div>
 
 <!--button id="pausa">pausa</button-->
+<!-- 
+<script>
+
+setInterval(()=>{
+    
+    var sc = document.getElementById('w').innerHTML;
+    var msc = document.getElementById('msc').innerHTML;;
+
+if(sc > msc){msc = sc}
+
+}, 100);
+
+
+</script> -->
 
 <script type="text/javascript" src="magia.js"></script>
 

@@ -1,3 +1,4 @@
+var msc = 0;
 function init(vdn){
 
     var ctx = document.getElementById('can').getContext('2d');
@@ -477,6 +478,9 @@ ctx.drawImage(ala.image, ala.x, ala.y+=.8, ala.w, ala.h)
 // if(ala.y>=100){ctx.drawImage(ala.image, ala.x, ala.y, ala.w, ala.h)}
 // else if(ala.y<500){ctx.drawImage(ala.image, ala.x, ala.y +=.4, ala.w, ala.h)}
 
+nave.sec(ala);
+
+
     }
 }
 
@@ -485,6 +489,7 @@ this.x = 310,
 this.y = 500,
 this.w = 40,
 this.h = 70,
+this.vidas = 3,
 this.dir,
 this.tbala = 'a',
 this.balas = [];
@@ -506,11 +511,9 @@ this.dibuja = function(){
         
         this.killalien(this.balas[c],c);  
         if(ba.y < 0 || ba.h < -400){this.balas.splice(c, 1)}
+
           
     }
-
-
-
 
     }  
 
@@ -560,6 +563,22 @@ if(nave.tbala == 'b' &&  ba.h <= e.y && ba.x+ba.w >= e.x && ba.x <= e.x+e.w && b
 
 }
 
+    this.sec = function(ala){
+
+        if(ala.y < this.y + 50 && ala.y > this.y - 50 && ala.x < this.x + 80 && ala.x > this.x - 80){
+            
+            // ene.splice(ala-1, 1);
+            // this.vidas--;            
+            
+            // if(this.vidas == 0){
+            clearInterval(drawi);
+        
+            document.getElementById('ventana_de_entrada').style.display = 'inline';
+            // }
+        }
+
+    }
+
 }
 
 var nave = new Nave();
@@ -570,7 +589,12 @@ function draw(){
     nave.dibuja();
     drawene(ene);
 
+
     document.getElementById('w').innerHTML = "score " + sc;
+    document.getElementById('msc').innerHTML = msc;
+
+    if(sc > msc){msc=sc}
+
 }
 
 var drawi = setInterval(draw, 1000/50);
