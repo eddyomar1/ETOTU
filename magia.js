@@ -1162,7 +1162,7 @@ var ala = enel[c];
 ctx.drawImage(ala.image, ala.x, ala.y+=.8, ala.w, ala.h)
 // if(ala.y>=100){ctx.drawImage(ala.image, ala.x, ala.y, ala.w, ala.h)}
 // else if(ala.y<500){ctx.drawImage(ala.image, ala.x, ala.y +=.4, ala.w, ala.h)}
-
+nave.sec(ala);
     }
 }
 
@@ -1246,6 +1246,22 @@ if(nave.tbala == 'b' &&  ba.h <= e.y && ba.x+ba.w >= e.x && ba.x <= e.x+e.w && b
 
 }
 
+this.sec = function(ala){
+
+    if(ala.y < this.y + 50 && ala.y > this.y - 50 && ala.x < this.x + 80 && ala.x > this.x - 80){
+        
+        // ene.splice(ala-1, 1);
+        // this.vidas--;            
+        
+        // if(this.vidas == 0){
+        clearInterval(drawi);
+    
+        document.getElementById('ventana_de_entrada').style.display = 'inline';
+        // }
+    }
+
+}
+
 }
 
 var nave = new Nave();
@@ -1257,6 +1273,9 @@ function draw(){
     drawene(ene);
 
     document.getElementById('w').innerHTML = "score " + sc;
+    document.getElementById('msc').innerHTML = msc;
+
+    if(sc > msc){msc=sc}
 }
 
 var drawi = setInterval(draw, 1000/50);
