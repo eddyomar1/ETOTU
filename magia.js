@@ -632,7 +632,7 @@ if(event.keyCode === 68){
 //     nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10})
 // }
 
-if(event.keyCode === 32){
+if(event.keyCode === 32 || event.keyCode === 13){
     nave.tbala = 'a';
     if(nave.balas.length < 10){ nave.balas.push({x: nave.x + 38, y:nave.y, w:3, h:10});
 }}
