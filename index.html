@@ -13,7 +13,7 @@ button{font-size: 30px; padding: 20px 20px 20px 20px; margin: 20px 20px 20px 20p
 
 #tipo{font-size: 30px;}
 
-#ventana_de_entrada{position: absolute; background-color: teal; width: 600px; height: 400px;}
+#ventana_de_entrada{position: fixed; background-color: teal; width: 600px; height: 400px;}
 
 .ndp{width:150px; margin: 30px 30px 30px 30px;}
 
@@ -33,7 +33,9 @@ var alto = screen.height;
 
     var vde = document.getElementById('ventana_de_entrada');
     vde.style.top = (alto - 400)/2 + 'px';
-    vde.style.left = (ancho - 600)/2 + 'px';
+   vde.style.left = (ancho - 600)/2 + 'px';
+    // vde.style.marginLeft = (ancho / 1.2) + 'px';
+
 
     if(ancho <= 1000){document.getElementById('botones').style.display = 'block'; alert('El minijuego aun no esta muy bien optimizado para moviles');     vde.style.left = ancho/2 + 'px';}
     else{document.getElementById('botones').style.display = 'none'; alert('El minijuego a sido optimizado para PC');}

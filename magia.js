@@ -1350,19 +1350,32 @@ document.addEventListener('keyup', function(event){
         // function ns(){nave.dir = '';}
         
 
-        bu.addEventListener('mousedown', function(event){
+        bu.addEventListener('touchstart', function(event){
             nave.dir = 'ariba';
         });
-        bd.addEventListener('mousedown', function(event){
+        bd.addEventListener('touchstart', function(event){
             nave.dir = 'abajo';
         });
-        bl.addEventListener('mousedown', function(event){
+        bl.addEventListener('touchstart', function(event){
             nave.dir = 'left';
         });
-        br.addEventListener('mousedown', function(event){
+        br.addEventListener('touchstart', function(event){
             nave.dir = 'right';
         });
-        
+
+        bu.addEventListener('touchend', function(event){
+            nave.dir = '';
+        });
+        bd.addEventListener('touchend', function(event){
+            nave.dir = '';
+        });
+        bl.addEventListener('touchend', function(event){
+            nave.dir = '';
+        });
+        br.addEventListener('touchend', function(event){
+            nave.dir = '';
+        });
+
 
                 
 setInterval(() => {
